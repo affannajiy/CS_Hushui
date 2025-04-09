@@ -1,0 +1,42 @@
+﻿@page "/counter"
+
+@* Reference to the Counter.razor.cs *@
+<PageTitle>Counter</PageTitle>
+
+@* Whatever HTML code you want *@
+<h1>Counter</h1>
+
+<p role="status">Current count: @currentCount</p>
+
+@if (currentCount > 20)
+{
+    <div> WARNING: currentCount is going high!! </div>
+}
+
+@if (currentCount > 30)
+{
+	//Display new button
+    <div> NOTICE: currentCount is creating new button! </div>
+    <div>
+        <button class="btn btn-danger" @onclick="ResetCount">Reset</button>
+    </div> 
+}
+
+<button class="btn btn-primary" @onclick="IncrementCount">Click me</button>
+
+
+@code 
+{
+    //C# code will be executed when the user clicks the button
+    private int currentCount = 0;
+
+    private void IncrementCount()
+    {
+        currentCount+= 5;
+    }
+
+    private void ResetCount()
+    {
+        currentCount = 0;
+	}
+}

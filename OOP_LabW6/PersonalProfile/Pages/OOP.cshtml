@@ -1,0 +1,91 @@
+﻿@page
+@model OOPModel
+@{
+    ViewData["Title"] = "OOP";
+}
+
+<!--OOP Page-->
+<!--Page Content-->
+<div class="text-center">
+    <h1 style="background-color: orange;" class="display-4">What is OOP?</h1>
+</div>
+
+<!--Informations-->
+<div class="text-justify">
+    <p>
+        <strong>OOP</strong> stands for Object-Oriented Programming, a programming paradigm that organizes software design around data, or objects, rather than functions and logic.
+        Objects are instances of classes, which are templates that define the properties (attributes) and behaviors (methods) that the objects will have.
+        OOP is centered around four key principles: Encapsulation, Abstraction, Inheritance, and Polymorphism.
+    </p>
+
+    <h2>Key Concepts of OOP:</h2>
+
+    <h3>Objects:</h3>
+    <p>
+        An object is a self-contained entity that consists of data (attributes or properties) and procedures (methods or functions) to manipulate the data.
+        For example, a Car object could have attributes like color, model, and year, and methods like drive() and brake().
+    </p>
+
+    <h3>Classes:</h3>
+    <p>
+        A class is a blueprint or template for creating objects.
+        It defines the structure and behavior that the objects created from it will have.
+        For example, the Car class defines what properties and methods all car objects will have.
+    </p>
+
+    <h3>Encapsulation:</h3>
+    <p>
+        Encapsulation is the principle of bundling the data (attributes) and methods (functions) that operate on the data into a single unit (class).
+        It also restricts direct access to some of the object’s components, which is important for maintaining control over data.
+        Access is usually controlled via public methods (getters and setters), which are used to manipulate private fields.
+    </p>
+
+    <h3>Abstraction:</h3>
+    <p>
+        Abstraction means hiding the complex details of an object and exposing only the necessary parts.
+        It helps simplify the complexity of the system by focusing on the essential qualities of an object rather than the details of how it works.
+    </p>
+
+    <h3>Inheritance:</h3>
+    <p>
+        Inheritance allows a class (child class or subclass) to inherit the properties and methods of another class (parent class or superclass).
+        It promotes code reuse and establishes a relationship between classes.
+    </p>
+
+    <h3>Polymorphism:</h3>
+    <p>
+        Polymorphism allows objects of different classes to be treated as objects of a common parent class.
+        It also allows methods to be overridden so that different classes can provide specific implementations for the same method.
+        This can be achieved through method overriding and method overloading.
+    </p>
+
+    <h2>Benefits of OOP:</h2>
+    <ul>
+        <li><strong>Modularity</strong>: You can divide complex programs into smaller, modular objects, making them easier to manage.</li>
+        <li><strong>Reusability</strong>: Classes and objects can be reused across programs, and inheritance allows you to build on existing code.</li>
+        <li><strong>Maintainability</strong>: Encapsulation keeps the data safe from unwanted access, and abstraction simplifies the interface for interacting with objects.</li>
+        <li><strong>Flexibility</strong>: Polymorphism allows you to define one interface and have multiple implementations.</li>
+    </ul>
+
+    <h2>Real-World Example:</h2>
+    <p>
+        In the real world, we have a lot of different Transactions. For example, we can have a savings account, checking account, and loan account.
+        Those transactions can be kept in a database or list or an array called TransactionList.
+        The TransactionList may contain transactions done by employee1, employee2 and so on. The Name of the Employee, the Amount, and the Time of the Transaction.
+    </p>
+
+    <h3>Consider a banking system:</h3>
+    <ul>
+        <li><strong>Objects</strong>: Account, Customer, Transaction.</li>
+        <li><strong>Classes</strong>: SavingsAccount, CheckingAccount, LoanAccount (these could inherit from a generic Account class).</li>
+        <li><strong>Encapsulation</strong>: The Account class hides the account balance and allows deposits and withdrawals through public methods.</li>
+        <li><strong>Inheritance</strong>: SavingsAccount and CheckingAccount inherit properties from Account.</li>
+        <li><strong>Polymorphism</strong>: A Transaction class might have methods that behave differently depending on whether the transaction is a Deposit or Withdrawal.</li>
+    </ul>
+
+    <h2>Conclusion:</h2>
+    <p>
+        Object-Oriented Programming (OOP) provides a structured approach to writing complex programs by modeling them as collections of objects, promoting modularity, reusability, and maintainability.
+        By mastering OOP, developers can write clearer and more scalable code.
+    </p>
+</div>
